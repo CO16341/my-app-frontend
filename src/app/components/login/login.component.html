@@ -1,0 +1,21 @@
+<div fxLayoutAlign="center center" fxFlexFill >
+    <mat-card fxFlex="25">
+     <mat-card-title>Login Page</mat-card-title>
+     <mat-card-content>
+        <form [formGroup]=loginForm >
+            <p>
+                <mat-form-field>
+                    <input matInput placeholder="Email Address" formControlName="email"/>
+                  </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input matInput placeholder="Password" formControlName="password" />
+                  </mat-form-field>
+            </p>
+        </form>
+            <button mat-raised-button type="submit" color="primary" (click)="checkUserForLogin()">Login</button>
+     </mat-card-content>
+    </mat-card>
+  </div>
+  
